@@ -1,0 +1,144 @@
+{
+  "uid" : "5634f6ff93f2af9f",
+  "name" : "Проверка перехода из личного кабинета в конструктор",
+  "fullName" : "TransitionToConstructorTest.checkingTransitionClickingOnConstructor",
+  "historyId" : "a0cf5b270a284c657344cfd5326fc303",
+  "time" : {
+    "start" : 1741969916447,
+    "stop" : 1741969918260,
+    "duration" : 1813
+  },
+  "description" : "Тест проверяет переход из личного кабинета в конструктор при нажатии на кнопку \"Конструктор\" в шапке сайта",
+  "descriptionHtml" : "<p>Тест проверяет переход из личного кабинета в конструктор при нажатии на кнопку &quot;Конструктор&quot; в шапке сайта</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест проверяет переход из личного кабинета в конструктор при нажатии на кнопку \"Конструктор\" в шапке сайта",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие стартовой страницы",
+      "time" : {
+        "start" : 1741969916974,
+        "stop" : 1741969917951,
+        "duration" : 977
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Клик на кнопку \"Личный кабинет\"",
+      "time" : {
+        "start" : 1741969917951,
+        "stop" : 1741969918008,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на страницу авторизации",
+      "time" : {
+        "start" : 1741969918008,
+        "stop" : 1741969918038,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Клик на кнопку \"Конструктор\"",
+      "time" : {
+        "start" : 1741969918038,
+        "stop" : 1741969918090,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на стартовую страницу и нахождение текста \"Соберите бургер\"",
+      "time" : {
+        "start" : 1741969918090,
+        "stop" : 1741969918118,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "TransitionToConstructorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkingTransitionClickingOnConstructor"
+  }, {
+    "name" : "suite",
+    "value" : "TransitionToConstructorTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "3120@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5634f6ff93f2af9f.json",
+  "parameterValues" : [ ]
+}

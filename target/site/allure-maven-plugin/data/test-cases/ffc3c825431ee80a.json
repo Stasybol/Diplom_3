@@ -1,0 +1,114 @@
+{
+  "uid" : "ffc3c825431ee80a",
+  "name" : "Проверка перехода в личный кабинет",
+  "fullName" : "PersonalAccountTest.checkingTransitionClickingOnPersonalAccount",
+  "historyId" : "4fbd44564df60b3b1a700022bfa0ebe6",
+  "time" : {
+    "start" : 1741969897865,
+    "stop" : 1741969899518,
+    "duration" : 1653
+  },
+  "description" : "Тест проверяет переход в личный кабинет при нажатии на кнопку \"Личный кабинет\" со стартовой странице",
+  "descriptionHtml" : "<p>Тест проверяет переход в личный кабинет при нажатии на кнопку &quot;Личный кабинет&quot; со стартовой странице</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест проверяет переход в личный кабинет при нажатии на кнопку \"Личный кабинет\" со стартовой странице",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие стартовой страницы",
+      "time" : {
+        "start" : 1741969898353,
+        "stop" : 1741969899258,
+        "duration" : 905
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Клик на кнопку \"Личный кабинет\"",
+      "time" : {
+        "start" : 1741969899258,
+        "stop" : 1741969899335,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на страницу авторизации",
+      "time" : {
+        "start" : 1741969899335,
+        "stop" : 1741969899382,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "PersonalAccountTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkingTransitionClickingOnPersonalAccount"
+  }, {
+    "name" : "suite",
+    "value" : "PersonalAccountTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "3120@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ffc3c825431ee80a.json",
+  "parameterValues" : [ ]
+}

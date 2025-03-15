@@ -1,0 +1,186 @@
+{
+  "uid" : "d7e397be0cd3fbd6",
+  "name" : "Проверка входа через кнопку \"Личный кабинет\"",
+  "fullName" : "CheckLoginTest.viaButtonPersonalAccountTest",
+  "historyId" : "9173a63fbfd156b57acd9f926f930edc",
+  "time" : {
+    "start" : 1741969890061,
+    "stop" : 1741969893352,
+    "duration" : 3291
+  },
+  "description" : "Тест проверяет переход на форму входа при нажатии на кнопку \"Личный кабинет\" в шапке сайта",
+  "descriptionHtml" : "<p>Тест проверяет переход на форму входа при нажатии на кнопку &quot;Личный кабинет&quot; в шапке сайта</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест проверяет переход на форму входа при нажатии на кнопку \"Личный кабинет\" в шапке сайта",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1741969890071,
+        "stop" : 1741969890335,
+        "duration" : 264
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "site.nomoreparties.stellarburgers.model.User@65b2582"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Открытие стартовой страницы",
+      "time" : {
+        "start" : 1741969890859,
+        "stop" : 1741969891797,
+        "duration" : 938
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Клик на кнопку \"Личный кабинет\"",
+      "time" : {
+        "start" : 1741969891797,
+        "stop" : 1741969891859,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на страницу авторизации",
+      "time" : {
+        "start" : 1741969891859,
+        "stop" : 1741969891903,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Заполнение полей email и пароль и клик по кнопке \"Войти\"",
+      "time" : {
+        "start" : 1741969891903,
+        "stop" : 1741969892072,
+        "duration" : 169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "lissa.okon@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "q2d39yfRea"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на стартовую страницу после авторизации",
+      "time" : {
+        "start" : 1741969892072,
+        "stop" : 1741969892616,
+        "duration" : 544
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1741969892747,
+        "stop" : 1741969893342,
+        "duration" : 595
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDQ1OWUxOWVkMjgwMDAxYjU5YmYwMiIsImlhdCI6MTc0MTk2OTg4OSwiZXhwIjoxNzQxOTcxMDg5fQ.pBDKXX0wmIhqTxYBEY6I2h0235LTd5kk-x3GFFzCc40"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CheckLoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "viaButtonPersonalAccountTest"
+  }, {
+    "name" : "suite",
+    "value" : "CheckLoginTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "3120@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7e397be0cd3fbd6.json",
+  "parameterValues" : [ ]
+}
