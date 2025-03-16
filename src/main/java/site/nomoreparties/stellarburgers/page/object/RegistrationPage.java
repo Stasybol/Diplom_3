@@ -38,25 +38,29 @@ public class RegistrationPage {
         return driver.findElement(TEXT_REGISTRATION).isDisplayed();
     }
 
-    // метод заполняет поле «Имя»
+    // метод заполняет поле "Имя"
+    @Step("Заполнение поля имя")
     public RegistrationPage setName(String name) {
         driver.findElement(FIELD_NAME).sendKeys(name);
         return this;
     }
 
-    // метод заполняет поле «Email»
+    // метод заполняет поле "Email"
+    @Step("Заполнение поля email")
     public RegistrationPage setEmail(String email) {
         driver.findElement(FIELD_EMAIL).sendKeys(email);
         return this;
     }
 
-    // метод заполняет поле «Пароль»
+    // метод заполняет поле "Пароль"
+    @Step("Заполнение поля пароль")
     public RegistrationPage setPassword(String password) {
         driver.findElement(FIELD_PASSWORD).sendKeys(password);
         return this;
     }
 
-    // метод кликает по кнопке «Регистрация»
+    // метод кликает по кнопке "Регистрация"
+    @Step("Клик по кнопке \"Регистрация\"")
     public RegistrationPage clickSignUpButton() {
         driver.findElement(BUTTON_REGISTER).click();
         return this;

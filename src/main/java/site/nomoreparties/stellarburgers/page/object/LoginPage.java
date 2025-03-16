@@ -43,19 +43,22 @@ public class LoginPage {
         return this;
     }
 
-    //метод заполняет поле «Email»
+    //метод заполняет поле "Email"
+    @Step("Заполнение поля email")
     public LoginPage setEmail(String email) {
         driver.findElement(FIELD_EMAIL).sendKeys(email);
         return this;
     }
 
-    //метод заполняет поле «Пароль»
+    //метод заполняет поле "Пароль"
+    @Step("Заполнение поля пароль")
     public LoginPage setPassword(String password) {
         driver.findElement(FIELD_PASSWORD).sendKeys(password);
         return this;
     }
 
-    //метод кликает по кнопке «Войти»
+    //метод кликает по кнопке "Войти"
+    @Step("Клик по кнопке \"Войти\"")
     public LoginPage clickLoginButton() {
         driver.findElement(BUTTON_LOGIN).click();
         return this;

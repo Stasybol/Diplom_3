@@ -30,21 +30,16 @@ public class CheckLoginTest {
     private RecoverPasswordPage recoverPasswordPage;
 
     @Before
-    @DisplayName("Подготовка данных: создание пользователя")
-    @Description("Создание пользователя перед каждым тестом. Предполагается, что пользователь успешно создан и получен его token.")
-    public void createUser(){
+    @DisplayName("Подготовка данных: создание пользователя, инициализация драйвера и страниц перед тестом")
+    @Description("Создание пользователя перед каждым тестом и получение его токена. Настройка WebDriver для браузера и создание экземпляров страниц (HomePage и LoginPage) перед выполнением каждого теста.")
+    public void setUp(){
         client = new BurgerServiceClient(PAGE_URL);
         user = User.allField();
         ValidatableResponse responseCreate = client.createUser(user);
         responseCreate.assertThat().body("success", equalTo(true));
         token = responseCreate.extract().header("authorization");
         credentials = Credentials.fromUser(user);
-    }
 
-    @Before
-    @DisplayName("Инициализация драйвера и страниц перед тестом")
-    @Description("Метод настраивает WebDriver для браузера и создает экземпляры страниц (HomePage и LoginPage) перед выполнением каждого теста.")
-    public void setUp() {
         driver = WebDriverFactory.createForName(BROWSER_CHROME);
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
@@ -55,6 +50,9 @@ public class CheckLoginTest {
     @Description("Тест проверяет переход на форму входа со стартовой странице при нажатии на кнопку \"Войти в аккаунт\"")
     public void viaButtonLoginToAccountTest(){
         homePage.openingHomePage().clickButtonLoginToAccount();
+        Assert.assertTrue(loginPage.openingLoginForm());
+        loginPage.login(credentials.getEmail(), credentials.getPassword());
+        Assert.assertTrue(homePage.homePageAfterAuthorization());
     }
 
     @Test
@@ -64,6 +62,9 @@ public class CheckLoginTest {
         homePage.openingHomePage();
         headerPage = new HeaderPage(driver);
         headerPage.clickButtonPersonalAccount();
+        Assert.assertTrue(loginPage.openingLoginForm());
+        loginPage.login(credentials.getEmail(), credentials.getPassword());
+        Assert.assertTrue(homePage.homePageAfterAuthorization());
     }
 
     @Test
@@ -78,6 +79,9 @@ public class CheckLoginTest {
         registrationPage = new RegistrationPage(driver);
         Assert.assertTrue(registrationPage.openingRegistrationPage());
         registrationPage.clickButtonLogin();
+        Assert.assertTrue(loginPage.openingLoginForm());
+        loginPage.login(credentials.getEmail(), credentials.getPassword());
+        Assert.assertTrue(homePage.homePageAfterAuthorization());
     }
 
     @Test
@@ -90,22 +94,16 @@ public class CheckLoginTest {
         recoverPasswordPage = new RecoverPasswordPage(driver);
         Assert.assertTrue(recoverPasswordPage.openingPageRecoverPassword());
         recoverPasswordPage.clickButtonLogin();
-    }
-
-    @After
-    @DisplayName("Проверка авторизации и закрытие браузера")
-    @Description("Метод проверяет успешный вход и закрывает браузер")
-    public void tearDown(){
         Assert.assertTrue(loginPage.openingLoginForm());
         loginPage.login(credentials.getEmail(), credentials.getPassword());
         Assert.assertTrue(homePage.homePageAfterAuthorization());
-        driver.quit();
     }
 
     @After
-    @DisplayName("Очистка данных: удаление пользователя")
-    @Description("Удаление пользователя после выполнения каждого теста")
-    public void dataCleaning(){
+    @DisplayName("Закрытие браузера и удаление пользователя")
+    @Description("Метод закрывает браузер и удаляет пользователя, созданого перед тестом")
+    public void tearDown(){
+        driver.quit();
         ValidatableResponse responseDelete = client.deleteUser(token);
         responseDelete.assertThat().statusCode(SC_ACCEPTED).body("success", equalTo(true));
     }
