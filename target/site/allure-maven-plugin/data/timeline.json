@@ -4,204 +4,204 @@
   "children" : [ {
     "name" : "WIN-9K741VKQF95",
     "children" : [ {
-      "name" : "12668@WIN-9K741VKQF95.main(1)",
+      "name" : "8168@WIN-9K741VKQF95.main(1)",
       "children" : [ {
-        "name" : "Проверка выхода из личного кабинета",
-        "uid" : "3bc4761e63c53a8",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122855893,
-          "stop" : 1742122861876,
-          "duration" : 5983
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Ошибка при регистрации при длине пароля 4 символа",
-        "uid" : "381f973825079fa0",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122872125,
-          "stop" : 1742122874639,
-          "duration" : 2514
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка перехода из личного кабинета в конструктор",
-        "uid" : "5cabc2120e3884d0",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122884725,
-          "stop" : 1742122887134,
-          "duration" : 2409
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка перехода в личный кабинет",
-        "uid" : "c0be8de9882677e4",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122861883,
-          "stop" : 1742122863907,
-          "duration" : 2024
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка перехода к разделу \"Соусы\"",
-        "uid" : "118e3ef22ac1d5c4",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122880116,
-          "stop" : 1742122882228,
-          "duration" : 2112
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Ошибка при регистрации при длине пароля 5 символов",
-        "uid" : "1fadb0a5cf88eed5",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122874639,
-          "stop" : 1742122877153,
-          "duration" : 2514
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка входа через кнопку \"Войти в аккаунт\"",
-        "uid" : "cd637b9982de32ea",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122834785,
-          "stop" : 1742122843193,
-          "duration" : 8408
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка перехода к разделу \"Булки\"",
-        "uid" : "d4cadedbae92e094",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122882228,
-          "stop" : 1742122884725,
-          "duration" : 2497
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка перехода к разделу \"Начинки\"",
-        "uid" : "1d6da3f70a801c6a",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122877153,
-          "stop" : 1742122880116,
-          "duration" : 2963
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Успешная регистрации при длине пароля 6 символов",
-        "uid" : "b62d378a44d9a1c6",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
+        "uid" : "5e3e4d76264ef210",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
         "status" : "passed",
         "time" : {
-          "start" : 1742122863907,
-          "stop" : 1742122868041,
-          "duration" : 4134
+          "start" : 1742204256632,
+          "stop" : 1742204260796,
+          "duration" : 4164
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка перехода из личного кабинета в конструктор",
-        "uid" : "e5f975dfe29945b1",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
+        "uid" : "3e2d793461d6c4b2",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
         "status" : "passed",
         "time" : {
-          "start" : 1742122887141,
-          "stop" : 1742122889335,
-          "duration" : 2194
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка входа через кнопку \"Личный кабинет\"",
-        "uid" : "cd649dd0ee4b5bac",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122851777,
-          "stop" : 1742122855884,
-          "duration" : 4107
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка входа через кнопку \"Войти\" на странице регистрации",
-        "uid" : "e9138c64362fed44",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1742122847531,
-          "stop" : 1742122851767,
-          "duration" : 4236
+          "start" : 1742204280230,
+          "stop" : 1742204282315,
+          "duration" : 2085
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка входа через кнопку \"Войти\" на странице восстановления пароля",
-        "uid" : "9e519585023d1043",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
+        "uid" : "8b26bee00d681192",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
         "status" : "passed",
         "time" : {
-          "start" : 1742122843313,
-          "stop" : 1742122847518,
-          "duration" : 4205
+          "start" : 1742204236613,
+          "stop" : 1742204240744,
+          "duration" : 4131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка перехода в личный кабинет",
+        "uid" : "31f204235be89d6c",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204254487,
+          "stop" : 1742204256632,
+          "duration" : 2145
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Успешная регистрации при длине пароля 7 символов",
-        "uid" : "753644b99b6d7917",
-        "parentUid" : "8a4e941cab612846dab88de9759d22f1",
+        "uid" : "885222ed90c01471",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
         "status" : "passed",
         "time" : {
-          "start" : 1742122868049,
-          "stop" : 1742122872125,
-          "duration" : 4076
+          "start" : 1742204260796,
+          "stop" : 1742204264898,
+          "duration" : 4102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка выхода из личного кабинета",
+        "uid" : "62da67c660cfa879",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204248827,
+          "stop" : 1742204254482,
+          "duration" : 5655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка входа через кнопку \"Личный кабинет\"",
+        "uid" : "33d94f6febb71c1f",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204244992,
+          "stop" : 1742204248811,
+          "duration" : 3819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка входа через кнопку \"Войти в аккаунт\"",
+        "uid" : "25e950d0e25d2c17",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204228089,
+          "stop" : 1742204236491,
+          "duration" : 8402
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка перехода к разделу \"Булки\"",
+        "uid" : "75c6c604b58cab04",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204275012,
+          "stop" : 1742204278021,
+          "duration" : 3009
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка входа через кнопку \"Войти\" на странице регистрации",
+        "uid" : "35eb2bb5d8767db1",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204240759,
+          "stop" : 1742204244983,
+          "duration" : 4224
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка перехода к разделу \"Начинки\"",
+        "uid" : "8ca7b09de2883ce0",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204270350,
+          "stop" : 1742204273019,
+          "duration" : 2669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка перехода из личного кабинета в конструктор",
+        "uid" : "d28f6babd7e518da",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204278021,
+          "stop" : 1742204280224,
+          "duration" : 2203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка перехода к разделу \"Соусы\"",
+        "uid" : "78283c36725e45a0",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204273019,
+          "stop" : 1742204275010,
+          "duration" : 1991
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Ошибка при регистрации при длине пароля 4 символа",
+        "uid" : "7cf10649699751dd",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204264898,
+          "stop" : 1742204267602,
+          "duration" : 2704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Ошибка при регистрации при длине пароля 5 символов",
+        "uid" : "a75de5721ea28fb",
+        "parentUid" : "99fc85438c3bb7f1c18700539a489f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1742204267602,
+          "stop" : 1742204270341,
+          "duration" : 2739
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8a4e941cab612846dab88de9759d22f1"
+      "uid" : "99fc85438c3bb7f1c18700539a489f32"
     } ],
     "uid" : "d93b3032ee10bb346f26259f5b4fba9c"
   } ]
