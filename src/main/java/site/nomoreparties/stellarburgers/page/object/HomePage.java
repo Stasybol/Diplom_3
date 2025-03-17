@@ -1,9 +1,7 @@
 package site.nomoreparties.stellarburgers.page.object;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static site.nomoreparties.stellarburgers.constant.UrlAndDuration.DEFAULT_TIMEOUT;
@@ -102,5 +100,20 @@ public class HomePage {
     @Step("Поиск элемента с текстом \"Начинки\"")
     public WebElement elementTextFillings() {
         return driver.findElement(TEXT_FILLINGS);
+    }
+
+    //метод для проверки, что элемент находится в области видимости
+    @Step("Проверка, что элемент в области видимости")
+    public boolean isElementInViewport(WebElement element) {
+        return new WebDriverWait(driver, DEFAULT_TIMEOUT)
+            .until(driver -> {
+            Rectangle rect = element.getRect();
+            Dimension windowSize = driver.manage().window().getSize();
+
+            return rect.getX() >= 0
+                    && rect.getY() >= 0
+                    && rect.getX() + rect.getWidth() <= windowSize.getWidth()
+                    && rect.getY() + rect.getHeight() <= windowSize.getHeight();
+        });
     }
 }

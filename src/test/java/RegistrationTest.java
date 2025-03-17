@@ -29,6 +29,10 @@ public class RegistrationTest {
     private BurgerServiceClient client;
     private Credentials credentials;
     private static Faker faker = new Faker();
+    private String name;
+    private String email;
+    private String password;
+
 
     @Before
     @DisplayName("Инициализация драйвера и страниц перед тестом")
@@ -54,39 +58,36 @@ public class RegistrationTest {
     @DisplayName("Успешная регистрации при длине пароля 7 символов")
     @Description("Тест проверяет успешную регистрацию при вводе в поле \"Пароль\" 7 символов")
     public void successRegistrationWithLengthPassword7Test() {
-        String name = faker.name().firstName();
-        String email = faker.internet().emailAddress();
-        String password7 = faker.lorem().characters(7);
+        name = faker.name().firstName();
+        email = faker.internet().emailAddress();
+        password = faker.lorem().characters(7);
 
-        registrationPage.register(name, email, password7);
+        registrationPage.register(name, email, password);
         Assert.assertTrue(loginPage.openingLoginForm());
-        client = new BurgerServiceClient(PAGE_URL);
-        credentials = new Credentials(email, password7, name);
+
     }
 
     @Test
     @DisplayName("Успешная регистрации при длине пароля 6 символов")
     @Description("Тест проверяет успешную регистрацию при вводе в поле \"Пароль\" 6 символов")
     public void successRegistrationWithLengthPassword6Test() {
-        String name = faker.name().firstName();
-        String email = faker.internet().emailAddress();
-        String password6 = faker.lorem().characters(6);
+        name = faker.name().firstName();
+        email = faker.internet().emailAddress();
+        password = faker.lorem().characters(6);
 
-        registrationPage.register(name, email, password6);
+        registrationPage.register(name, email, password);
         Assert.assertTrue(loginPage.openingLoginForm());
-        client = new BurgerServiceClient(PAGE_URL);
-        credentials = new Credentials(email, password6, name);
     }
 
     @Test
     @DisplayName("Ошибка при регистрации при длине пароля 5 символов")
     @Description("Тест проверяет ошибку \"Некоректрный пароль\" при регистрации, когда в поле \"Пароль\" введено 5 символов")
     public void errorWithLengthPassword5Test() {
-        String name = faker.name().firstName();
-        String email = faker.internet().emailAddress();
-        String password5 = faker.lorem().characters(5);
+        name = faker.name().firstName();
+        email = faker.internet().emailAddress();
+        password = faker.lorem().characters(5);
 
-        registrationPage.register(name, email, password5);
+        registrationPage.register(name, email, password);
         Assert.assertTrue(registrationPage.isDisplayedErrorIncorrectPassword());
 
     }
@@ -95,13 +96,12 @@ public class RegistrationTest {
     @DisplayName("Ошибка при регистрации при длине пароля 4 символа")
     @Description("Тест проверяет ошибку \"Некоректрный пароль\" при регистрации, когда в поле \"Пароль\" введено 4 символа")
     public void errorWithLengthPassword4Test() {
-        String name = faker.name().firstName();
-        String email = faker.internet().emailAddress();
-        String password4 = faker.lorem().characters(4);
+        name = faker.name().firstName();
+        email = faker.internet().emailAddress();
+        password = faker.lorem().characters(4);
 
-        registrationPage.register(name, email, password4);
+        registrationPage.register(name, email, password);
         Assert.assertTrue(registrationPage.isDisplayedErrorIncorrectPassword());
-
     }
 
     @After
@@ -109,9 +109,11 @@ public class RegistrationTest {
     @Description("Метод закрывает браузер и удаляет пользователя после выполнения каждого теста, если пользователь был успешно создан")
     public void tearDown(){
         driver.quit();
-        if (credentials != null) {
-            ValidatableResponse responseLogin = client.loginUser(credentials);
-            String token = responseLogin.extract().path("accessToken");
+        client = new BurgerServiceClient(PAGE_URL);
+        credentials = new Credentials(email, password, name);
+        ValidatableResponse responseLogin = client.loginUser(credentials);
+        String token = responseLogin.extract().path("accessToken");
+        if (token != null) {
             ValidatableResponse responseDelete = client.deleteUser(token);
             responseDelete.assertThat().statusCode(SC_ACCEPTED).body("success", equalTo(true));
         }
