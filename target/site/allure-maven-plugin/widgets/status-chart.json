@@ -1,0 +1,151 @@
+[ {
+  "uid" : "8ca7b09de2883ce0",
+  "name" : "Проверка перехода к разделу \"Начинки\"",
+  "time" : {
+    "start" : 1742204270350,
+    "stop" : 1742204273019,
+    "duration" : 2669
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e2d793461d6c4b2",
+  "name" : "Проверка перехода из личного кабинета в конструктор",
+  "time" : {
+    "start" : 1742204280230,
+    "stop" : 1742204282315,
+    "duration" : 2085
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a75de5721ea28fb",
+  "name" : "Ошибка при регистрации при длине пароля 5 символов",
+  "time" : {
+    "start" : 1742204267602,
+    "stop" : 1742204270341,
+    "duration" : 2739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75c6c604b58cab04",
+  "name" : "Проверка перехода к разделу \"Булки\"",
+  "time" : {
+    "start" : 1742204275012,
+    "stop" : 1742204278021,
+    "duration" : 3009
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b26bee00d681192",
+  "name" : "Проверка входа через кнопку \"Войти\" на странице восстановления пароля",
+  "time" : {
+    "start" : 1742204236613,
+    "stop" : 1742204240744,
+    "duration" : 4131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62da67c660cfa879",
+  "name" : "Проверка выхода из личного кабинета",
+  "time" : {
+    "start" : 1742204248827,
+    "stop" : 1742204254482,
+    "duration" : 5655
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25e950d0e25d2c17",
+  "name" : "Проверка входа через кнопку \"Войти в аккаунт\"",
+  "time" : {
+    "start" : 1742204228089,
+    "stop" : 1742204236491,
+    "duration" : 8402
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e3e4d76264ef210",
+  "name" : "Успешная регистрации при длине пароля 6 символов",
+  "time" : {
+    "start" : 1742204256632,
+    "stop" : 1742204260796,
+    "duration" : 4164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7cf10649699751dd",
+  "name" : "Ошибка при регистрации при длине пароля 4 символа",
+  "time" : {
+    "start" : 1742204264898,
+    "stop" : 1742204267602,
+    "duration" : 2704
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31f204235be89d6c",
+  "name" : "Проверка перехода в личный кабинет",
+  "time" : {
+    "start" : 1742204254487,
+    "stop" : 1742204256632,
+    "duration" : 2145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d28f6babd7e518da",
+  "name" : "Проверка перехода из личного кабинета в конструктор",
+  "time" : {
+    "start" : 1742204278021,
+    "stop" : 1742204280224,
+    "duration" : 2203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "885222ed90c01471",
+  "name" : "Успешная регистрации при длине пароля 7 символов",
+  "time" : {
+    "start" : 1742204260796,
+    "stop" : 1742204264898,
+    "duration" : 4102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78283c36725e45a0",
+  "name" : "Проверка перехода к разделу \"Соусы\"",
+  "time" : {
+    "start" : 1742204273019,
+    "stop" : 1742204275010,
+    "duration" : 1991
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35eb2bb5d8767db1",
+  "name" : "Проверка входа через кнопку \"Войти\" на странице регистрации",
+  "time" : {
+    "start" : 1742204240759,
+    "stop" : 1742204244983,
+    "duration" : 4224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33d94f6febb71c1f",
+  "name" : "Проверка входа через кнопку \"Личный кабинет\"",
+  "time" : {
+    "start" : 1742204244992,
+    "stop" : 1742204248811,
+    "duration" : 3819
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
